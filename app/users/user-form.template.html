@@ -1,0 +1,33 @@
+
+<form #userForm="ngForm" (ngSubmit)="onSubmit()" *ngIf="active">
+	<p>Form is True/False: <strong>{{userForm.valid}}</strong> </p>
+	<div class="form-group" [ngClass]="{'has-error': name.invalid && name.touched}">
+		<input  type="text" name="name" class="form-control" required [(ngModel)]="newUser.name" #name="ngModel" autoGrow>
+		<span class="help-block" *ngIf="name.invalid && name.touched">Name is Required.</span>
+	</div>
+	<div class="form-group" [ngClass]="{'has-error': name.invalid && name.touched}">
+		<input  type="text" name="username" class="form-control" required [(ngModel)]="newUser.username" #username="ngModel">
+		<span class="help-block" *ngIf="username.invalid && name.touched">User Name is Required.</span>
+	</div>
+	<button type="submit" class="btn btn-default btn-lg btn-block" [disabled]="userForm.invalid">Create User</button>
+
+</form>
+<br/>
+    <pannel>
+      <h4 class="panel-title">
+        <span class="pointer">Collapsible panel</span>
+      </h4>
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  nisi ut aliquip ex ea commodo consequat.</div>
+    </pannel>
+        <pannel>
+      <h4 class="panel-title">
+        <span class="pointer">Collapsible Lorem ipsum dolor</span>
+      </h4>
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  nisi ut aliquip ex ea commodo consequat.</div>
+    </pannel>

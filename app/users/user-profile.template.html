@@ -1,0 +1,6 @@
+<div class="jumbotron" *ngIf="user">
+  <h2>{{welcomeMsg}}</h2>
+  <h3>{{user.name}} <small>({{user.username}})</small></h3>
+  <input class="form-control" [(ngModel)] = "user.name" autoGrow />
+  </div>
+ 

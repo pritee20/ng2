@@ -1,0 +1,17 @@
+<h2>Contact</h2>
+<form>
+	<div class="form-group">
+		<label class="sr-only" for="Name">Name</label>
+		<input type="text" class="form-control" ngControl="name"   id="name" placeholder="Enter Name" required minlength="3">
+<!-- 		<div class="alert alert-denger" *ngIf="name.errors">
+			<span *ngIf="name.errors.required">Name Is Required!</span>
+			<span *ngIf="name.errors.minlength">Name should be three letters</span>
+		</div> -->
+	</div>
+	<div class="form-group">
+		<label class="sr-only" for="comment">Comment</label>
+		<textarea class="form-control" id="comment" ngControl="comment"  placeholder="Enter Comment" required ></textarea>
+		<div class="alert alert-denger">Comment Is Required!</div>
+	</div>	
+	<button type="submit" class="btn btn-default">Submit</button>
+</form>

@@ -1,0 +1,8 @@
+<div>
+	<span  class="glyphicon pointer" [ngClass]="{
+	'glyphicon-star-empty' : ratingIcon,
+	'glyphicon-star': !ratingIcon
+	} "
+	(click)="onClick()"></span>
+	{{ratingNum}}
+</div>

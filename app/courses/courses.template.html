@@ -1,0 +1,9 @@
+<h2>Courses</h2>
+<p>{{title}}:</p>
+<p>{{post.body | ellipses:50}}</p>
+<p><rating [is-favorite]="post.rating" (change)="onChangeRating($event)" [ratingNum]="post.ratingNum"></rating></p>
+
+<ul>
+	<li *ngFor="let course of courses">{{course}}</li>
+</ul>
+

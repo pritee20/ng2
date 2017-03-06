@@ -1,0 +1,1 @@
+{"version":3,"file":"ellipses.pipe.js","sourceRoot":"","sources":["../../app/ellipses/ellipses.pipe.ts"],"names":[],"mappings":";AAIE,CAAC;AACH;IAAA;IAMA,CAAC;IALA,gCAAS,GAAT,UAAU,KAAa,EAAE,IAAc;QACtC,EAAE,CAAA,CAAC,KAAK,CAAC,CAAA,CAAC;YACT,MAAM,CAAC,KAAK,CAAC,SAAS,CAAC,CAAC,EAAE,EAAE,CAAC,GAAG,KAAK,CAAC;QACvC,CAAC;IACF,CAAC;IACF,mBAAC;AAAD,CAAC,AAND,IAMC;AANY,oCAAY"}

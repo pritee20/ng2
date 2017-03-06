@@ -1,0 +1,25 @@
+<main-header></main-header>
+
+<main>
+<div class="container-fluid">
+<div class="col-sm-4">
+  <ul class="list-group userlist" *ngIf="users">
+    <li class="list-group-item " *ngFor="let user of users" (click)="selectUser(user)" [class.active]="user == activeUser">
+    {{user.name}}   ({{user.username}})
+    </li>
+  </ul>
+  <user-form (userCreated)="onUserCreated($event)"></user-form>
+</div>
+
+<div class="col-sm-8">
+<router-outlet></router-outlet>
+  <user-profile [user]="activeUser"></user-profile>
+
+  <div class="well" *ngIf="!activeUser">
+    <h3>Choose User, from left navigation!</h3>
+  </div>
+ 
+</div>
+
+</div>
+</main>

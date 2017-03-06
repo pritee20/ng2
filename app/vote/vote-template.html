@@ -1,0 +1,5 @@
+<div>
+	<span class="glyphicon glyphicon-chevron-up pointer" (click)="onVoteUp()" [class.active]="myVote == 1"></span>
+	<div>{{voteCount + myVote}}</div>
+	<span class="glyphicon glyphicon-chevron-down pointer" (click)="onVoteDown()" [class.active]="myVote == -1"></span>
+</div>
